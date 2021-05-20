@@ -215,6 +215,9 @@ table {
 }
 
 .formBtn {
+  position: fixed;
+  bottom: 5px;
+  left: 77%;
   background: transparent;
   color: #42b8e1;
   font-weight: bolder;
