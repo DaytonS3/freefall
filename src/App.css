@@ -107,6 +107,7 @@ section {
 }
 body {
   line-height: 1;
+  overflow-y: hidden;
 }
 ol,
 ul {
@@ -126,4 +127,189 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+#text_div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: 10px;
+}
+
+.center_all {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  color: white;
+}
+
+.center_all_text {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  margin-right: -50px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  color: white;
+}
+
+.center_all_input {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  margin-right: -50px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  color: white;
+  width: 600px;
+}
+
+.homeHeader {
+  font-size: 100px;
+  color: #42b8e1;
+  font-weight: bolder;
+  font-family: "Electrolize";
+}
+
+.homeText {
+  margin-left: 10px;
+  font-size: 24px;
+  font-weight: bolder;
+  letter-spacing: 7px;
+  font-family: "Electrolize";
+}
+
+.homeImage {
+  height: 400px;
+  width: 400px;
+}
+
+.formContainer {
+  display: flex;
+  align-items: center;
+}
+
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 100%;
+}
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 1.3rem;
+  color: #fff;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+  height: 10px;
+}
+
+.formBtn {
+  background: transparent;
+  color: #42b8e1;
+  font-weight: bolder;
+  font-family: "Electrolize";
+  margin-left: 20px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.formBtn:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+.formText {
+  margin-left: 10px;
+  font-size: 24px;
+  font-weight: bolder;
+  letter-spacing: 7px;
+  font-family: "Electrolize";
+}
+
+.form__field::placeholder {
+  color: transparent;
+}
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 1.3rem;
+  cursor: text;
+  top: 20px;
+}
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #9b9b9b;
+}
+.form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #ffffff, #42b8e1);
+  border-image-slice: 1;
+}
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #11998e;
+  font-weight: 700;
+}
+/* reset input */
+.form__field:required,
+.form__field:invalid {
+  box-shadow: none;
 }

@@ -1,0 +1,11 @@
+.container {
+  width: 100%;
+  background: #000000;
+}
+
+h1 {
+  color: white;
+  text-emphasis: bold;
+  font-size: 30px;
+  text-align: center;
+}
