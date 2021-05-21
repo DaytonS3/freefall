@@ -26,7 +26,7 @@ class Footer extends React.Component{
             <div className="center_all_text">
             <p className="homeHeader">GO FREEFALL</p>
             <p className="homeText">Modernizing The Skydive Industy</p>
-            <div style={{height: "2px", width: "600px", background: "white", margin: "0 auto", marginTop: "10px", opacity: "20%"}}></div>
+            <div className="buff"></div>
             </div>
 
             <div className="center_all">
@@ -34,7 +34,7 @@ class Footer extends React.Component{
             </div>
 
             <div className="center_all_input">
-            <p className="formText"></p>
+            <p className="formText">Want to be first to know when we're ready?</p>
             <form autocomplete="off" className="formContainer" onSubmit={this.sendEmail}> 
                 <div className="form__group field">
                     <input className="form__field" name="email" />

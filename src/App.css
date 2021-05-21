@@ -91,20 +91,11 @@ video {
   font: inherit;
 }
 /* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-}
+html,
 body {
   line-height: 1;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 ol,
 ul {
@@ -166,6 +157,18 @@ table {
   width: 600px;
 }
 
+@media (min-width: 450px) and (max-width: 600px) {
+  .center_all_input {
+    width: 450px;
+  }
+}
+
+@media (max-width: 450px) {
+  .center_all_input {
+    width: 300px;
+  }
+}
+
 .homeHeader {
   font-size: 100px;
   color: #42b8e1;
@@ -173,7 +176,7 @@ table {
   font-family: "Electrolize";
 }
 
-@media (max-width: 600px) {
+@media (min-width: 450px) and (max-width: 600px) {
   .homeHeader {
     font-size: 50px;
     color: #42b8e1;
@@ -184,18 +187,8 @@ table {
 
 @media (max-width: 450px) {
   .homeHeader {
-    font-size: 30px;
-    margin-left: 130px;
-    color: #42b8e1;
-    font-weight: bolder;
-    font-family: "Electrolize";
-  }
-}
-
-@media (max-width: 586px) {
-  .homeHeader {
     font-size: 40px;
-    margin-left: 130px;
+
     color: #42b8e1;
     font-weight: bolder;
     font-family: "Electrolize";
@@ -210,7 +203,7 @@ table {
   font-family: "Electrolize";
 }
 
-@media (max-width: 600px) {
+@media (min-width: 450px) and (max-width: 600px) {
   .homeText {
     margin-left: 10px;
     font-size: 14px;
@@ -219,12 +212,11 @@ table {
     font-family: "Electrolize";
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 450px) {
   .homeText {
-    margin-left: 133px;
-    font-size: 8px;
+    font-size: 12px;
     font-weight: bolder;
-    letter-spacing: 7px;
+    letter-spacing: 5px;
     font-family: "Electrolize";
   }
 }
@@ -232,6 +224,13 @@ table {
 .homeImage {
   height: 400px;
   width: 400px;
+}
+
+@media (max-width: 410px) {
+  .homeImage {
+    height: 300px;
+    width: 300px;
+  }
 }
 
 .formContainer {
@@ -259,7 +258,7 @@ table {
   height: 10px;
 }
 
-@media (max-width: 600px) {
+@media (min-width: 450px) and (max-width: 600px) {
   .form__field {
     width: 60%;
     margin-left: 100px;
@@ -268,8 +267,7 @@ table {
 
 @media (max-width: 450px) {
   .form__field {
-    width: 55%;
-    margin-left: 130px;
+    width: 100%;
   }
 }
 
@@ -288,7 +286,7 @@ table {
   background: none;
 }
 
-@media (max-width: 538px) {
+@media (max-width: 600px) {
   .formBtn {
     left: 57%;
     font-size: 18px;
@@ -346,6 +344,27 @@ table {
   }
 }
 
+.buff {
+  height: 2px;
+  width: 600px;
+  background: white;
+  margin: 0 auto;
+  margin-top: 10px;
+  opacity: 20%;
+}
+
+@media (max-width: 600px) {
+  .buff {
+    width: 400px;
+  }
+}
+
+@media (max-width: 400px) {
+  .buff {
+    width: 350px;
+  }
+}
+
 .formText {
   margin-left: 10px;
   font-size: 24px;
@@ -369,11 +388,12 @@ table {
   .formText {
     margin-left: 10px;
     margin-bottom: 20px;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bolder;
     word-break: break-all;
     font-family: "Electrolize";
     text-overflow: clip;
+    letter-spacing: 4px;
   }
 }
 
