@@ -176,12 +176,31 @@ table {
   font-family: "Electrolize";
 }
 
+@media (max-width: 600px) {
+  .homeHeader {
+    font-size: 50px;
+    color: #42b8e1;
+    font-weight: bolder;
+    font-family: "Electrolize";
+  }
+}
+
 .homeText {
   margin-left: 10px;
   font-size: 24px;
   font-weight: bolder;
   letter-spacing: 7px;
   font-family: "Electrolize";
+}
+
+@media (max-width: 600px) {
+  .homeText {
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: bolder;
+    letter-spacing: 7px;
+    font-family: "Electrolize";
+  }
 }
 
 .homeImage {
@@ -214,6 +233,13 @@ table {
   height: 10px;
 }
 
+@media (max-width: 600px) {
+  .form__field {
+    width: 60%;
+    margin-left: 100px;
+  }
+}
+
 .formBtn {
   position: fixed;
   bottom: 5px;
@@ -227,6 +253,12 @@ table {
   padding: 0;
   border: none;
   background: none;
+}
+
+@media (max-width: 600px) {
+  .formBtn {
+    left: 55%;
+  }
 }
 
 .formBtn:hover {
@@ -279,6 +311,16 @@ table {
   font-weight: bolder;
   letter-spacing: 7px;
   font-family: "Electrolize";
+}
+
+@media (max-width: 600px) {
+  .formText {
+    margin-left: 10px;
+    font-size: 17px;
+    font-weight: bolder;
+    letter-spacing: 7px;
+    font-family: "Electrolize";
+  }
 }
 
 .form__field::placeholder {
