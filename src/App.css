@@ -185,6 +185,10 @@ table {
   }
 }
 
+*:focus {
+  outline: none;
+}
+
 @media (max-width: 450px) {
   .homeHeader {
     font-size: 40px;
