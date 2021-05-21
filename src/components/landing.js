@@ -8,7 +8,7 @@ class Landing extends React.Component{
     render(){
         return (
           <div className="container">
-            <Particles params={particlesConfig}></Particles>
+            <Particles width='100vw' height='100vh'params={particlesConfig}></Particles>
           </div>
             
         );
