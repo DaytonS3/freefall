@@ -1,5 +1,5 @@
 .container {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background: #000000;
 }
@@ -11,4 +11,7 @@ h1 {
   text-align: center;
 }
 @media (min-height: 680px) {
+}
+input::placeholder {
+  color: white;
 }

@@ -34,12 +34,12 @@ class Footer extends React.Component{
             </div>
 
             <div className="center_all_input">
-            <p className="formText">Want to be first to know when we're ready?</p>
+            <p className="formText"></p>
             <form autocomplete="off" className="formContainer" onSubmit={this.sendEmail}> 
                 <div className="form__group field">
                     <input className="form__field" name="email" />
                 </div>
-                <input className="formBtn" type="submit" value="SUBSCRIBE"/>
+                <input className="formBtn" type="submit" value="SUBSCRIBE" placeholder="email"/>
             </form>
             
             </div>
